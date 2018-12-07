@@ -21,7 +21,7 @@ $characters = [
 </head>
 <body>
 <h1>Book title: <?= $book["title"] ?> - Author: <?= $book["author"] ?></h1>
-<p><?= $book["description"] ?></p>
+<p>"<?= $book["description"] ?>"</p>
 <h2>Main Characters</h2>
 <ul>
     <li><?= $characters[0] ?></li>
