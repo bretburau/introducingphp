@@ -8,7 +8,33 @@
 <body>
 <h1>Multiplication Table</h1>
 <table>
-    <tr>
+    <?php
+        for ($i = 0; $i < 13; $i++) {
+            if ($i == 0) {
+                echo "<tr>";
+                for ($j = 0; $j < 13; $j++) {
+                    if ($j == 0) {
+                        echo "<th>&nbsp;</th>";
+                    } else {
+                        echo "<th>$j</th>";
+                    }
+                }
+                echo "</tr>";
+            } else {
+                echo "<tr>";
+                for ($j = 0; $j < 13; $j++) {
+                    if ($j == 0) {
+                        echo "<th>$i</th>";
+                    } else {
+                        $product = $i * $j;
+                        echo "<td>$product</td>";
+                    }
+                }
+                echo "</tr>";
+            }
+        }
+    ?>
+    <!-- <tr>
         <th>&nbsp;</th>
         <th>1</th>
         <th>2</th>
@@ -202,7 +228,7 @@
         <td>120</td>
         <td>132</td>
         <td>144</td>
-    </tr>
+    </tr> -->
 </table>
 </body>
 </html>
