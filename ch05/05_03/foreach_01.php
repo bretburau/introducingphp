@@ -11,7 +11,11 @@ $characters = ['Arthur Dent', 'Ford Prefect', 'Zaphod Beeblebrox', 'Marvin', 'Sl
 <body>
 <h1>Main Characters</h1>
 <ul>
-
+    <?php
+    foreach ($characters as $name) {
+        echo "<li>$name</li>";
+    }
+    ?>
 </ul>
 </body>
 </html>
