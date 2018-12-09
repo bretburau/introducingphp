@@ -5,6 +5,7 @@ $characters = [
     'Marvin',
     'Slartibartfast',
     'Ford Prefect'];
+rsort($characters);
 ?>
 <!DOCTYPE html>
 <html lang="en">
