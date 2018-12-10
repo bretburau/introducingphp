@@ -1,4 +1,6 @@
-<?php require './includes/copyright.php'; ?>
+<?php 
+set_include_path(get_include_path() . PATH_SEPARATOR . 'Library/WebServer/docuents/introducingphp/ch07/07_04/includes');
+require './includes/copyright.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

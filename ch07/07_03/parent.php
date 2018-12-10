@@ -1,3 +1,4 @@
+<?php $siteroot  = '/dev/introducingphp/ch07/07_03'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
