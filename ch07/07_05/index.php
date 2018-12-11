@@ -9,7 +9,7 @@
 </head>
 <body id="page_home">
 <div class="wrapper">
-<?= include './includes/nav.html' ?>
+<?= require './includes/nav.html' ?>
   <section id="main">
     <article id="aboutheevent">
       <h2>About the Event</h2>
