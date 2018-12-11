@@ -8,7 +8,7 @@
 
 <body>
 <h1>Contact Us</h1>
-<form method="get" action="">
+<form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
   <p>
     <label for="name">Name:</label>
     <input type="text" name="name" id="name">
@@ -26,7 +26,14 @@
   </p>
 </form>
 <pre>
-
+  <?php if ($_GET) {
+    echo 'Content of the $_GET array: <br>';
+    print_r($_GET);
+  }else if ($_POST) {
+    echo 'Content of the $_POST array:<br>';
+    print_r($_POST);
+  }
+  ?>
 </pre>
 </body>
 </html>
